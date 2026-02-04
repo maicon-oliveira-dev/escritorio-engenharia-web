@@ -1,0 +1,50 @@
+﻿.page-contato .page-hero {
+  background: var(--bg);
+}
+
+.page-contato .contato-hero {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 760px;
+}
+
+.page-contato .contato-grid {
+  align-items: start;
+}
+
+.page-contato .contato-card {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.page-contato .contato-aside {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.page-contato .contato-info {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.page-contato .contato-media {
+  min-height: 240px;
+}
+
+.page-contato .contato-whatsapp {
+  margin-top: var(--space-3);
+  justify-self: start;
+}
+
+@media (max-width: 900px) {
+  .page-contato .contato-media {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-contato .contato-card .btn {
+    width: 100%;
+  }
+}
+

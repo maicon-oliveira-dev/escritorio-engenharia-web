@@ -1,0 +1,32 @@
+﻿.page-servicos .servicos-hero {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.page-servicos .servicos-list {
+  margin-top: var(--space-6);
+}
+
+.page-servicos .servicos-card__icon {
+  width: 100%;
+  border-radius: var(--r-lg);
+}
+
+.page-servicos .servicos-process {
+  margin-top: var(--space-5);
+}
+
+.page-servicos .process-cta {
+  margin-top: var(--space-5);
+  display: flex;
+}
+
+
+
+@media (max-width: 720px) {
+  .page-servicos .servicos-hero {
+    gap: var(--space-4);
+  }
+}
+

@@ -1,0 +1,88 @@
+﻿:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+
+  --graphite-950: #020617;
+  --graphite-900: #0f172a;
+  --graphite-700: #334155;
+  --graphite-500: #64748b;
+  --graphite-300: #cbd5f5;
+
+  --line: rgba(15, 23, 42, 0.1);
+
+  --primary: #0b3a78;
+  --primary-2: #2563eb;
+  --gold: #d4af37;
+
+  --success: #16a34a;
+  --danger: #dc2626;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", serif;
+
+  --h1: clamp(2.2rem, 4vw, 3.4rem);
+  --h2: clamp(1.6rem, 2.5vw, 2.3rem);
+  --h3: clamp(1.2rem, 2vw, 1.6rem);
+  --p: 1rem;
+  --lh: 1.75;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --r-xl: 28px;
+  --r-lg: 24px;
+  --r-md: 18px;
+  --r-sm: 14px;
+
+  --shadow-xs: 0 1px 2px rgba(2, 6, 23, 0.05);
+  --shadow-sm: 0 1px 2px rgba(2, 6, 23, 0.06), 0 6px 16px rgba(2, 6, 23, 0.06);
+  --shadow-md: 0 8px 24px rgba(2, 6, 23, 0.1), 0 2px 6px rgba(2, 6, 23, 0.06);
+  --shadow-lg: 0 18px 60px rgba(2, 6, 23, 0.16), 0 6px 16px rgba(2, 6, 23, 0.08);
+
+  --glow-blue: 0 0 0 1px rgba(37, 99, 235, 0.15), 0 12px 30px rgba(37, 99, 235, 0.18);
+  --glow-gold: 0 0 0 1px rgba(212, 175, 55, 0.18), 0 12px 30px rgba(212, 175, 55, 0.14);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 180ms;
+  --t-med: 320ms;
+  --t-slow: 600ms;
+
+  --container-width: 1200px;
+  --header-height: 76px;
+}
+
+[data-theme="dark"] {
+  --bg: #0b1120;
+  --surface: #0f172a;
+  --graphite-950: #f8fafc;
+  --graphite-900: #e2e8f0;
+  --graphite-700: #cbd5f5;
+  --graphite-500: #94a3b8;
+  --graphite-300: #64748b;
+  --line: rgba(148, 163, 184, 0.2);
+  --shadow-xs: 0 1px 2px rgba(2, 6, 23, 0.2);
+  --shadow-sm: 0 8px 24px rgba(2, 6, 23, 0.35);
+  --shadow-md: 0 18px 40px rgba(2, 6, 23, 0.35);
+  --shadow-lg: 0 26px 70px rgba(2, 6, 23, 0.45);
+}
+
+@media (min-width: 960px) {
+  :root {
+    --header-height: 88px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --header-height: 64px;
+  }
+}
+
+

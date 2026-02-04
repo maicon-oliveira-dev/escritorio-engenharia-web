@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engenharia Premium | Contato</title>
+  <meta name="description" content="Solicite uma proposta premium em engenharia e fale com nossos especialistas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages/contato.css" />
+</head>
+<body class="page-contato" data-page="contato">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Seção: Hero Contato -->
+    <section class="page-hero">
+      <div class="container contato-hero" data-reveal="up">
+        <span class="eyebrow">Contato</span>
+        <h1 class="title-tech title-tech--hero">Vamos construir uma solução técnica sob medida.</h1>
+        <p class="subtitle-soft">Preencha o formulário e receba um retorno prioritário da nossa equipe.</p>
+        <small class="text-muted">Retorno prioritário em horário comercial.</small>
+      </div>
+    </section>
+
+    <!-- Seção: Formulário -->
+    <section class="section">
+      <div class="container grid-2 contato-grid">
+        <div class="card-premium contato-card" data-reveal="up">
+          <h2 class="title-tech">Solicite uma proposta</h2>
+          <p class="subtitle-soft">Conte sobre seu desafio técnico e retornaremos com um diagnóstico inicial.</p>
+          <form class="form" data-form="contato" novalidate>
+            <div class="form__field form__field--stack">
+              <label for="nome">Nome completo *</label>
+              <input class="form__input" id="nome" name="nome" type="text" placeholder="Seu nome" required />
+              <small class="form__helper" data-error-for="nome"></small>
+            </div>
+            <div class="form__field form__field--stack">
+              <label for="email">Email corporativo *</label>
+              <input class="form__input" id="email" name="email" type="email" placeholder="email@empresa.com" required />
+              <small class="form__helper" data-error-for="email"></small>
+            </div>
+            <div class="form__field form__field--stack">
+              <label for="telefone">Telefone / WhatsApp *</label>
+              <input class="form__input" id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required />
+              <small class="form__helper" data-error-for="telefone"></small>
+            </div>
+            <div class="form__field form__field--stack">
+              <label for="empresa">Empresa</label>
+              <input class="form__input" id="empresa" name="empresa" type="text" placeholder="Nome da empresa" />
+              <small class="form__helper" data-error-for="empresa"></small>
+            </div>
+            <div class="form__field form__field--stack">
+              <label for="servico">Tipo de serviço *</label>
+              <select class="form__select" id="servico" name="servico" required>
+                <option value="">Selecione uma opção</option>
+                <option value="pericia">Perícia judicial</option>
+                <option value="seguranca">Segurança do trabalho</option>
+                <option value="mecanica">Engenharia mecânica</option>
+                <option value="treinamentos">Treinamentos / socorristas</option>
+                <option value="art">ART / responsabilidade técnica</option>
+              </select>
+              <small class="form__helper" data-error-for="servico"></small>
+            </div>
+            <div class="form__field form__field--stack">
+              <label for="mensagem">Mensagem *</label>
+              <textarea class="form__textarea" id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua necessidade" required></textarea>
+              <small class="form__helper" data-error-for="mensagem"></small>
+            </div>
+            <button class="btn btn--primary btn--magnetic" type="submit">Enviar solicitação</button>
+            <div class="form__feedback" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="contato-aside" data-reveal="up">
+          <div class="card-premium contato-info">
+            <h3 class="card-premium__title">Atendimento executivo</h3>
+            <p class="card-premium__text">Horário: Segunda a sexta, 9h às 18h.</p>
+            <p class="card-premium__text">Telefone: (00) 0000-0000</p>
+            <p class="card-premium__text">Email: contato@engenhariapremium.com</p>
+            <p class="card-premium__text">Endereço: Avenida Empresarial, 1000 - Sala 1201</p>
+            <span class="tag tag--small">Prioridade premium</span>
+            <a class="btn btn--outline btn--magnetic contato-whatsapp" href="https://wa.me/5500000000000?text=Quero%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20premium." target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+          <div class="media-card media-card--compact contato-media">
+            <img src="assets/images/contato/contato-banner-01.png" alt="Equipe de atendimento premium" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/scroll-animations.js" defer></script>
+  <script src="assets/js/header-sticky.js" defer></script>
+  <script src="assets/js/form-validation.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
+
+
