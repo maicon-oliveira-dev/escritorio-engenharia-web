@@ -72,3 +72,17 @@
   }
 }
 
+@media (max-width: 480px) {
+  .page-quem-somos .qs-hero__media {
+    min-height: 240px;
+  }
+
+  .page-quem-somos .qs-process__timeline {
+    padding: var(--space-4);
+  }
+
+  .page-quem-somos .qs-hero .btn {
+    width: 100%;
+  }
+}
+

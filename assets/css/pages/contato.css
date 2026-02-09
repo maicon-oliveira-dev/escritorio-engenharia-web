@@ -48,3 +48,14 @@
   }
 }
 
+@media (max-width: 480px) {
+  .page-contato .contato-whatsapp {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .page-contato .contato-info {
+    gap: 10px;
+  }
+}
+

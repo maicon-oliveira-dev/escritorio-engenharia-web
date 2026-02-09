@@ -7,8 +7,13 @@ body {
   color: var(--graphite-900);
   background-color: var(--bg);
   padding-top: 0;
+  overflow-x: clip;
   line-height: var(--lh);
   transition: background-color var(--t-med) var(--ease), color var(--t-med) var(--ease);
+}
+
+body.is-menu-open {
+  overflow: hidden;
 }
 
 h1,
@@ -37,7 +42,7 @@ a:hover {
 }
 
 .container {
-  width: min(100% - 2.5rem, var(--container-width));
+  width: min(100% - clamp(1.25rem, 3vw, 3rem), var(--container-width));
   margin: 0 auto;
 }
 
@@ -101,6 +106,16 @@ a:hover {
   opacity: 0.85;
 }
 
+@media (max-width: 960px) {
+  .section {
+    padding: clamp(40px, 7vw, 56px) 0;
+  }
+
+  .section--hero {
+    padding-top: clamp(52px, 8vw, 76px);
+  }
+}
+
 @media (max-width: 720px) {
   .container {
     width: min(100% - 1.5rem, var(--container-width));
@@ -117,6 +132,39 @@ a:hover {
   .subtitle-soft,
   .section__lead {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15.5px;
+  }
+
+  .container {
+    width: min(100% - 1rem, var(--container-width));
+  }
+
+  .eyebrow,
+  .section__eyebrow {
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+  }
+
+  .title-tech,
+  .section__title {
+    letter-spacing: -0.015em;
+  }
+
+  .subtitle-soft,
+  .section__lead {
+    font-size: 0.96rem;
+    max-width: 60ch;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 17px;
   }
 }
 

@@ -67,6 +67,16 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .page-servicos .servicos-hero {
+    grid-template-columns: 1.25fr 0.75fr;
+  }
+
+  .page-servicos .servicos-list {
+    gap: var(--space-5);
+  }
+}
+
 
 
 @media (max-width: 720px) {
@@ -82,6 +92,22 @@
   .page-servicos .servicos-card__list {
     font-size: 0.92rem;
     gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-servicos .servicos-card__list {
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 0.88rem;
+  }
+
+  .page-servicos .servicos-card__list li {
+    padding-left: 14px;
+  }
+
+  .page-servicos .process-cta .btn {
+    width: 100%;
   }
 }
 

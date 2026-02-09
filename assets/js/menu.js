@@ -15,16 +15,33 @@
     const nav = document.querySelector('.site-header__nav');
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
+    const setMenuState = (isOpen) => {
+      nav.classList.toggle('is-open', isOpen);
       toggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('is-menu-open', isOpen);
+    };
+
+    toggle.addEventListener('click', () => {
+      const isOpen = !nav.classList.contains('is-open');
+      setMenuState(isOpen);
     });
 
     nav.addEventListener('click', (event) => {
       const target = event.target;
       if (target && target.matches('a')) {
-        nav.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+        setMenuState(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+        setMenuState(false);
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 960 && nav.classList.contains('is-open')) {
+        setMenuState(false);
       }
     });
   }
